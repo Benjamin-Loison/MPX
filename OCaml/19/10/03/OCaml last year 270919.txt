@@ -1,0 +1,149 @@
+vector: v.(!i)
+string: s.[!i]
+
+récursif: cas d'arrêt ?
+
+match n with
+| 0 | 1 -> 
+
+match l with
+| [] | [_] ->
+| [a; b] ->
+
+Array.make n e
+
+accumulateur dans fonction auxiliaire interne à une fonction
+
+match l with
+| a::b::q ->
+
+List.mem e l
+List.rev l
+@
+List.length l
+-> linéaire
+
+List.hd l
+e::q
+q@[e]
+
+Array.make_matrix 2 2 0
+
+for ... do
+	for ... do
+		... (* if multiple ; *)
+	done;
+done;
+
+let id = [| [| 1; 0 |] ; [| 0 ; 1 |] |];;
+
+Array.sub v 0 length
+
+u_0 = 1; u_n = u_{ceil(n/2)} + u_n{floor(n/2)} + n -> O(n*log n)
+DPR pas toujours meilleur complexité
+
+opérations élémentaires: O(1)
+
+let cherche n =
+	let rec cherche i j =
+		...
+	in cherche 0 (n - 1);;
+
+7 / 2: 3
+fst(1, 2): 1
+
+(* map f l *)
+let ajoute x l1 = map (fun l -> x::l) l1;;
+
+() (* type: unit *)
+
+5 <> 3
+
+for i = (n-1) downto 0 do
+	...
+done;
+
+typeD'arrivé_of_typeDeDépart x
+abs (-2) (* parenthèses quand <0 *)
+exp, log (ln), sqrt, sin, cos, tan, tanh
+not true
+&& ||
+let c = 'z';;
+let s = "mpsi";;
+
+priorité au fonction (* f 2 * 3 *)
+
+let divise(m, n) = n mod m = 0;;
+
+let vec1 = Array.copy vec0 (* can do deep ? *)
+matrix.(0).(0)
+
+print_int i;;
+print_newline();;
+
+if cdt then (..; ..;) else (..; ..;) (* quoi faculatif si qu'une instruction ? *)
+si pas de else, dernière ligne du bloc doit être de type unit
+
+failwith "error"
+
+Type produit:
+type point = {x: float; y: float};;
+let p1 = {x = 2.; y = 3.};;
+p1.x
+type point = {mutable x: float; ...};;
+p1.x <- 1.5;;
+
+Type somme:
+type reelEtendu = Reel of float | Plusinfini | Moinsinfini;;
+let logEtendu x = match x with
+| x when x = Reel 0. -> Moinsinfini
+...
+
+type exp = Const of float | X | Somme of exp * exp | Produit of exp * exp | Puiss of exp * int;;
+
+let a = Produit(Puiss(X, 2), Somme(X, Const 1.5));;
+
+let rec str_of_exp e = match e with
+| Const c -> string_of_float c
+| X -> "x"
+| Somme(e1, e2) -> "(" ^ (str_of_exp e1) ^ " + " ^ (str_of_exp e2) ^ ")"
+| Produit(e1, e2) -> "(" ^ (str_of_exp e1) ^ " * " ^ (str_of_exp e2) ^ ")"
+| Puiss(e1, e2) -> "(" ^ (str_of_exp e1) ^ " ** " ^ (string_of_int e2) ^ ")";;
+
+try
+	... (* may contains raise divparzero *)
+with
+	(* filtrage *)
+exeception trouvee;; (* ? *)
+
+exponentielle: a^n avec a > 1
+
+TODO: revoir cours à partir du drapeau hollandais
+TODO: HORNER
+TODO: revoir notation couple, triplet, p-uplet et définition de fonction
+TODO: train on how OCaml works, like if renaming in matching...
+
+TP2: facteurs, make_matr
+TP5: maximum, racine
+TP6: acheval (linéaire), inversionbis
+DS2_2018: sommes
+DM1: indicePlateauMax, intersection, union
+DS2_2019: derivation, intégration, produit, SomMax*, 4)
+
+let rec decomp n b =
+	if n = 0 then [] else (n mod b)::(decomp (n/b) b);;
+
+let rec exprap x n = match n with
+| 0 -> 1
+| n -> let a = exprap x (n/2) in (if n mod 2 = 0 then 1 else x)*a*a;;
+
+anan−1..a2a1a0 = a0 + 10(a1 + 10(a2 + 10(...))).
+
+let rec valeur lst = match lst with
+| [] -> 0
+| a::q -> a+10*(valeur q);;
+
+Somme des entiers: (n(n+1))/2
+Somme des carrés: (n(n+1)(2n+1))/6
+Somme des cubes: ((n(n+1))/2)^2
+
