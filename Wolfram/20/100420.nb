@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3698,        111]
+NotebookOptionsPosition[      2714,         85]
+NotebookOutlinePosition[      3086,        101]
+CellTagsIndexPosition[      3043,         98]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      FractionBox["1", "x"]}], ")"}], "x"], ",", 
+   RowBox[{"x", "\[Rule]", "Infinity"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7955101036816783`*^9, 3.795510141795224*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"b7bd843d-6061-4a85-bc7f-3841c261cc17"],
+
+Cell[BoxData["\[ExponentialE]"], "Output",
+ CellChangeTimes->{3.7955101423114853`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"a173d8d5-14d7-4827-a613-0ad7984c23d2"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pizza", "=", "\[ExponentialE]"}], ";", 
+  RowBox[{"bier", "=", "1"}], ";"}]], "Input",
+ CellChangeTimes->{{3.795510343833274*^9, 3.7955103709093757`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"8f64456d-4397-4022-8bd3-b5ac79a86a1b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", 
+   RowBox[{"Log", "[", "pizza", "]"}], 
+   RowBox[{"Log", "[", 
+    RowBox[{"2", "*", "bier", "*", "pizza"}], "]"}]], 
+  RowBox[{
+   SuperscriptBox["pizza", "glace"], 
+   RowBox[{"\[DifferentialD]", "glace"}]}]}]], "Input",
+ CellChangeTimes->{{3.795510356094215*^9, 3.7955103857100115`*^9}, {
+  3.7955104250887165`*^9, 3.795510458341997*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"f70e1c5b-4218-42b3-9320-364859743fa9"],
+
+Cell[BoxData["\[ExponentialE]"], "Output",
+ CellChangeTimes->{3.7955104689499483`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"5305c987-bbc1-49fe-bb03-12308bd774ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", 
+   RowBox[{"Log", "[", "pizza", "]"}], 
+   RowBox[{"Log", "[", 
+    RowBox[{
+     SuperscriptBox["bier", "2"], "*", "pizza"}], "]"}]], 
+  RowBox[{
+   SuperscriptBox["pizza", "glace"], 
+   RowBox[{"\[DifferentialD]", "glace"}]}]}]], "Input",
+ CellChangeTimes->{{3.795510491673373*^9, 3.795510498622456*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"a28876bb-f29f-4442-9934-1c37e8c2f754"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.795510499045109*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"aff466e7-a385-40b2-b409-19a6eb100733"]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>3. Inherited,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 365, 9, 165, "Input",ExpressionUUID->"b7bd843d-6061-4a85-bc7f-3841c261cc17"],
+Cell[948, 33, 164, 2, 135, "Output",ExpressionUUID->"a173d8d5-14d7-4827-a613-0ad7984c23d2"]
+}, Open  ]],
+Cell[1127, 38, 267, 5, 123, "Input",ExpressionUUID->"8f64456d-4397-4022-8bd3-b5ac79a86a1b"],
+Cell[CellGroupData[{
+Cell[1419, 47, 480, 11, 178, "Input",ExpressionUUID->"f70e1c5b-4218-42b3-9320-364859743fa9"],
+Cell[1902, 60, 164, 2, 135, "Output",ExpressionUUID->"5305c987-bbc1-49fe-bb03-12308bd774ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2103, 67, 444, 11, 187, "Input",ExpressionUUID->"a28876bb-f29f-4442-9934-1c37e8c2f754"],
+Cell[2550, 80, 148, 2, 168, "Output",ExpressionUUID->"aff466e7-a385-40b2-b409-19a6eb100733"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
