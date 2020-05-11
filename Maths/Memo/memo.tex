@@ -1,0 +1,109 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=2cm]{geometry}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+	\section{Documents externes}
+	
+		Formulaire de Nizon (trigonométrie...).
+
+	\section{Bases de la logique}
+		
+		$(P \Rightarrow Q) \Leftrightarrow ($non $P$ ou $Q)$\\
+	
+		Lorsque $P \Rightarrow Q$, on dit que $P$ est une condition suffisante à $Q$, et que $Q$ est une condition nécessaire à $P$.
+		
+	\section{Calculs algébriques}
+	
+		$\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$\\
+		$\forall (a, b) \in \mathbb{C}^2, a^n - b^n = (a-b)\sum_{k=0}^{n-1}a^kb^{n-1-k}$\\
+		Si $p > n, \dbinom{n}{p} = 0$
+		
+	\section{Calculs algébriques}
+	
+		Système homogène associé et ensemble des solutions du système initiale (une particulière + celles du système homogène associé).\\
+		Méthode du pivot de Gauss.
+		
+	\section{Ensembles, applications, relations}
+		
+		$A = \{2, 3, 4, 5\}$ est défini en extension, et $B = \{n \in N; 2 \leq n < 6\}$ est défini en compréhension.\\
+		produit cartésien\\
+		graphe de l'application $f:E \rightarrow F$ la partie $\Gamma$ de $E*F$ définie par
+$\Gamma = \{(x, f(x)); x \in E\}$.\\
+		application injective si, $\forall y \in F$, l'équation $y = f(x)$ admet au plus une solution $x \in E$.\\
+		
+		Relation binaire anti-symétrique si, $\forall (x, y) \in E^2$, si $xRy$ et $yRx$, alors $x = y$.\\
+		Une relation d'équivalence est une relation réflexive, symétrique, transitive.\\
+		Si $R$ est une relation d'équivalence et $x$ est un élément de E, on appelle classe d'équivalence de $x$ l'ensemble des éléments $y$ de $E$ tels que $xRy$.\\
+		Une relation d'ordre est une relation réflexive, anti-symétrique, transitive.\\
+		
+		Si $R$ est une relation d'ordre sur $E$, alors\\
+		- on dit que l'ordre est total si on peut toujours comparer deux éléments de $E$: $\forall (x, y) \in E^2$, on a $xRy$ ou $yRx$. Dans le cas contraire, on dit que l'ordre est partiel.\\
+		- si $A$ est une partie de $E$ et $M$ est un élément de $E$, on dit que $M$ est un majorant de $A$ si, $\forall x \in A$, on a $xRM$.
+		
+	\section{Nombres complexes et trigonométrie}
+
+		$|z|^2 = z\overline{z}$\\
+		Cas d'égalité de l'inégalité triangulaire: Si $w \neq 0$ et $z \neq 0$, on a égalité si et seulement s'il existe $c > 0$ tel que $z = cw$.\\
+		$\mathbb{U}$ l'ensemble des nombres complexes de module 1.\\
+		
+		Formule d'Euler: $\forall \theta \in \mathbb{R}$, cos($\theta$) = $\frac{e^{i\theta} + e^{-i\theta}}{2}$ et sin($\theta$) = $\frac{e^{i\theta} - e^{-i\theta}}{2i}$\\
+		$z_1 + z_2 = \frac{-b}{a}$ et $z_1 * z_2 = \frac{c}{a}$\\
+		$z = r^{\frac{1}{n}}e^{i\frac{\theta + 2k\pi}{n}} \forall k \in \llbracket 0; n-1 \rrbracket$\\
+		
+		Si $A$, $B$ et $C$ sont trois points distincts du plan d'affixes respectives $a$, $b$, $c$ alors arg$\left(\frac{c-b}{c-a}\right)$ = $(\overrightarrow{CA}, \overrightarrow{CB})$ mod $2\pi$\\
+		Soit $A$ un point du plan et soient $k$, $\theta$ deux réels avec $k > 0$. On appelle similitude directe d'angle $\theta$ et de rapport $k$ l'application du plan dans lui-même qui à tout point $M$ distinct de $A$ associe le point $M'$ défini par $AM' = kAM$ et $(\overrightarrow{AM}, \overrightarrow{AM'}) = \theta$ mod $2\pi$\\
+		La similitude directe de centre $A$, d'angle $\theta$ et de rapport $k > 0$ est la composée, dans n'importe quel ordre, de l'homothétie de centre $A$ et de rapport $k$ et de la rotation de centre $A$ et d'angle $\theta$.\\
+		
+		Soient $a$, $b$ deux nombres complexes, $a \neq 0$. L'application du plan qui à tout point $M$ d'affixe $z$ associe le point $M'$ d'affixe $z' = az + b$ est\\
+		- une translation si $a = 1$, l'affixe du vecteur de translation est alors égal à $b$\\
+		- une similitude directe si $a \neq 1$; son rapport est $|a|$, son angle est un argument de $a$, et son centre $A$ admet pour affixe l'unique solution de l'équations aux points fixes $z = az + b$.\\
+		
+		Pour mettre sous forme trigonométrique la somme de deux nombres complexes de même module, on factorise par l'angle moitié: $re^{i\alpha} + re^{i\beta} = 2r$cos$\left(\frac{\alpha-\beta}{2}\right)e^{i\frac{\alpha + \beta}{2}}$\\
+		Attention ! $\frac{\alpha-\beta}{2}$ n'est pas nécessairement positif, on n'a pas toujours automatiquement la forme trigonométrique. Dans le cas où ce réel est négatif, il faut faire un décalage d'angle de $\pi$.
+
+	\section{Etudes des fonctions usuelles}
+	
+		Si $f:\mathbb{R} \rightarrow \mathbb{R}$ vérifie $f(a-x) = f(x)$ pour tout $x \in \mathbb{R}$, alors la courbe représentative $C_f$ de $f$ dans un repère orthonormé est alors symétrique par rapport à la droite $x = a/2$.\\
+		
+		Si pour tout $x \in I$, on a $f'(x) > 0$ sauf éventuellement pour un nombre fini de réels $x$, alors $f$ est strictement croissante.\\
+		
+		$(f^{-1})'(b)=\frac{1}{f'(f^{-1}(b))}$\\
+		
+		Exponentielles de base $a$: pour $a > 0$, $a^x=e^{xln\ a}$.\\
+		pour $\alpha \in \mathbb{R}, x^\alpha=e^{\alpha ln\ x}$\\
+		
+		Dérivées de arcsin, arccos et arctan.\\
+		$\forall x \in [-1, 1]$, arccos $x$ + arcsin $x = \frac{\pi}{2}$\\
+		$\forall x \geq 0$, arctan $x$ + arctan $\frac{1}{x} = \frac{\pi}{2}$ (et opposé sur $\mathbb{R}^-$)\\
+		Définitions de sh, ch et th.
+
+	\section{Formulaire}
+	
+		$argsh(x) = ln(x + \sqrt{x^2 + 1})$\\
+		$argsh'(x) = \frac{1}{\sqrt{1 + x^2}}$\\
+		$argch(x) = ln(x + \sqrt{x^2 - 1})$\\
+		$argch'(x) = \frac{1}{\sqrt{1 - x^2}}$\\
+		$argth(x) = \frac{1}{2}ln \left(\frac{1+x}{1-x}\right)$\\
+		$argth'(x) = \frac{1}{1 - x^2}$\\\\
+	
+		\begin{tabular}{lll}
+			Fonction & Primitive & Intervalle pour $x$ (défaut: $\mathbb{R}$)\\
+			$a^x (a > 0$ et a $\neq 1)$ & $\frac{a^x}{ln\ a}$\\
+			$ln\ x$ & $xln\ x - x$ & $]0, +\infty[$\\
+			$\frac{1}{a^2 + x^2} (a \neq 0)$ & $\frac{1}{2a}ln \left|\frac{x+a}{x-a}\right|=\frac{1}{a}argth \left(\frac{x}{a}\right)$\\
+			$\frac{1}{sin\ x cos\ x}$ & $ln\ \left|tan\ x\right|$\\
+			$tan^2(x)$ & $tan\ x - x$\\
+			
+		\end{tabular}\\\\
+		
+			$I_n = \int \frac{dx}{(1+x^2)^n}$ et $2nI_{n+1} = \frac{x}{(1 + x^2)^n} + (2n - 1)I_n$\\
+			$J_n = \int \frac{dx}{(1-x^2)^n}$ et $2nJ_{n+1} = \frac{x}{(1 - x^2)^n} + (2n - 1)J_n$
+
+\end{document}
